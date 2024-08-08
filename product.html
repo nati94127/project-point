@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <title>Products</title>
+     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=bespoke-stencil@700&f[]=khand@400&f[]=array@400&f[]=ranade@300&f[]=excon@500&f[]=satoshi@500&f[]=cabinet-grotesk@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css" />
+    <script src="master.js" defer></script>
+
+  </head>
+  <body>
+ <header>
+      <nav>
+                <div class="logo">
+          <img
+            src="img/Point_of_connection_final2_logo-1-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a class="on-active" href="product.html">Products</a></li>
+          <li class="dropdown">
+            <a href="service.html"
+              >Service & Support
+              <span><ion-icon name="caret-down"></ion-icon></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="service.html">Importing Services</a></li>
+              <li>
+                <a href="service.html">Market Research & Product Selection</a>
+              </li>
+              <li><a href="service.html">Logistics Support</a></li>
+              <li><a href="service.html">Distribution Services</a></li>
+              <li><a href="service.html">Marketing Services</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="toggles">
+          <div class="dropdown">
+            <button class="toggl-btn" id="language-toggle">
+              <ion-icon class="langu" name="language-outline"></ion-icon>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="product.html">EN</a></li>
+              <li><a href="Arebic pages/product.html">AR</a></li>
+            </ul>
+          </div>
+          <button class="toggl-btn" id="mode-toggle">☼</button>
+          <button id="menu-toggle" class="menu-icon">☰</button>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1 style="font-family: 'Bespoke Stencil', sans-serif;">Our Products</h1>
+      <p>
+        Welcome to our platform, where the pursuit of success is fortified with
+        innovation.
+      </p>
+    </section>
+    <div class="product-grid">
+      <div
+        class="product-card"
+        data-name="Fun Day Muffin Cake"
+        data-pack-price="3.47"
+        data-carton-price="41.58"
+        data-image="img/muffincake.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 50g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/muffincake.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Muffin Cake</h2>
+        <p class="product-price">$3.47</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details
+          <span>
+        </button>
+        </div>
+      </div>
+      <!--product2-->
+            <div
+        class="product-card"
+        data-name="Fun Day Cake Slice"
+        data-pack-price="2.93"
+        data-carton-price="35.18"
+        data-image="img/fundaycakeslice.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 40g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/fundaycakeslice.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Cake Slice</h2>
+        <p class="product-price">$2.93</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details 
+        </button>
+        </div>
+      </div>
+
+                  <div
+        class="product-card"
+        data-name="Fun Day Cake Slice"
+        data-pack-price="2.93"
+        data-carton-price="35.18"
+        data-image="img/hazelnuts.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 40g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/hazelnuts.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Cake Slice</h2>
+        <p class="product-price">$2.93</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details 
+        </button>
+        </div>
+      </div>
+      <!-- Add more product cards as needed -->
+    </div>
+    
+        <div class="product-grid">
+     <div
+        class="product-card"
+        data-name="Fun Day Chocolate Chip Brownie"
+        data-pack-price="3.47"
+        data-carton-price="41.58"
+        data-image="img/brownie.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Color: Cream Leather", "Weight: 40g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/brownie.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Chocolate Chip Brownie</h2>
+        <p class="product-price">$3.47</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details
+        </button>
+        </div>
+      </div>
+      <!--product4-->
+      <div
+        class="product-card"
+        data-name="Today Milk Chocolate"
+        data-pack-price="5.86"
+        data-carton-price="70.37"
+        data-image="img/todaymilkchocolate.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 25g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/todaymilkchocolate.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Today Milk Chocolate</h2>
+        <p class="product-price">$5.86</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details
+        </button>
+        </div>
+      </div>
+      <!-- Add more product cards as needed -->
+    </div>
+
+        <div class="product-grid">
+      <div
+        class="product-card"
+        data-name="Fun Day Muffin Cake"
+        data-pack-price="3.47"
+        data-carton-price="41.58"
+        data-image="img/fruitnuts.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 50g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/fruitnuts.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Muffin Cake</h2>
+        <p class="product-price">$3.47</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details
+          <span>
+        </button>
+        </div>
+      </div>
+      <!--product2-->
+            <div
+        class="product-card"
+        data-name="Fun Day Cake Slice"
+        data-pack-price="2.93"
+        data-carton-price="35.18"
+        data-image="img/almondnuts.png"
+        data-description="snack Description."
+        data-details='["ingridant: Plywood, Oak Veneer, Semi-Aniline Italian Leather", "Weight: 40g"]'
+      >
+      <div class="new-badge">New !</div>
+        <div class="imgbg">
+          <img
+            src="img/almondnuts.png"
+            alt="Product Image"
+            class="product-image"
+          />
+        </div>
+        <div class="details">
+        <h2 class="product-name">Fun Day Cake Slice</h2>
+        <p class="product-price">$2.93</p>
+        <button class="more-info-btn" onclick="showPopup(this)">
+          View Details 
+        </button>
+        </div>
+      </div>
+      <!-- Add more product cards as needed -->
+    </div>
+
+       <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <div class="popup-left">
+          <img
+            src="product-image.jpg"
+            alt="Product Image"
+            class="popup-product-image"
+          />
+        </div>
+        <div class="popup-right">
+          <h2 class="popup-product-name">CH07 Shell Chair</h2>
+          <p class="popup-product-category">White</p>
+          <div class="popup-rating">
+            <span class="stars">★★★★★</span>
+          </div>
+          <div class="price-selector">
+            <label for="price-type">Price Type:</label>
+            <select id="price-type" onchange="updatePrice()">
+              <option value="pack">Price per Pack</option>
+              <option value="carton">Price per Carton</option>
+            </select>
+          </div>
+          <p class="popup-product-price" id="price-container">
+            $<span id="price">599.00</span>
+          </p>
+          <div class="currency-selector">
+            <label for="currency">Currency:</label>
+            <select id="currency" onchange="updateCurrency()">
+              <option value="USD">USD</option>
+              <option value="SAR">SAR</option>
+            </select>
+          </div>
+          <div class="popup-quantity">
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-controls">
+              <button class="quantity-btn" onclick="changeQuantity(-1)">
+                -
+              </button>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                value="1"
+                min="1"
+                oninput="updatePrice()"
+              />
+              <button class="quantity-btn" onclick="changeQuantity(1)">
+                +
+              </button>
+            </div>
+          </div>
+          <div class="popup-description">
+            <h3>Description</h3>
+            <p id="popup-description-text">
+              This is a detailed description of the product. It includes all the
+              important features and benefits.
+            </p>
+          </div>
+          <div class="popup-details">
+            <h3>Details</h3>
+            <ul id="popup-details-list">
+              <li>Size: 29.5"H x 28.5"W x 28.5"D</li>
+              <li>
+                Materials: Plywood, Oak Veneer, Semi-Aniline Italian Leather
+              </li>
+              <li>Color: Cream Leather</li>
+              <li>Weight: 40 lbs</li>
+            </ul>
+          </div>
+          <div class="popup-total-price">
+            <span>Total Price: <span id="total-price">$599.00</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+        <footer class="footer">
+        <div class="logo">
+           <img src="../img/Point_of_connection_final2_logo-1-removebg-preview.png" alt="">
+          <p>2024 Point of connection. All rights reserved.</p>
+        </div>
+        <div class="footerabout">
+          <h4>About</h4>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Product</a>
+          <a href="#">Service & Support</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="fservice">
+          <h4>Service & Support</h4>
+          <p>Importing Services</p>
+          <p>Market Research & Product Selection</p>
+          <p>Logistics Support</p>
+          <p>Distribution Services</p>
+          <p>Marketing Services</p>
+        </div>
+        <div class="social">
+          <h4>Follow Us</h4>
+          <i class="lab la-facebook"></i>
+          <i class="lab la-telegram"></i>
+          <i class="lab la-twitter"></i>
+          <i class="lab la-instagram"></i>
+          <i class="lab la-linkedin"></i>
+        </div>
+      </footer>
+    <script>
+       const exchangeRate = 3.75; // Example exchange rate: 1 USD = 3.75 SAR
+      let currentCurrency = "USD";
+      let basePriceUSD = {};
+
+      function showPopup(button) {
+        const productCard = button.closest(".product-card");
+        const productName = productCard.getAttribute("data-name");
+        const productCategory = productCard.getAttribute("data-category");
+        const piecePrice = parseFloat(
+          productCard.getAttribute("data-piece-price")
+        );
+        const packPrice = parseFloat(
+          productCard.getAttribute("data-pack-price")
+        );
+        const cartonPrice = parseFloat(
+          productCard.getAttribute("data-carton-price")
+        );
+        const productImage = productCard.getAttribute("data-image");
+        const productDescription = productCard.getAttribute("data-description");
+        const productDetails = JSON.parse(
+          productCard.getAttribute("data-details")
+        ); // Parse the details attribute
+
+        basePriceUSD = {
+          piece: piecePrice,
+          pack: packPrice,
+          carton: cartonPrice,
+        };
+
+        document.querySelector(".popup-product-name").textContent = productName;
+        document.querySelector(".popup-product-category").textContent =
+          productCategory;
+        document.querySelector(".popup-product-image").src = productImage;
+        document.getElementById("popup-description-text").textContent =
+          productDescription; // Update description
+
+        // Update details
+        const detailsList = document.getElementById("popup-details-list");
+        detailsList.innerHTML = ""; // Clear existing details
+        productDetails.forEach((detail) => {
+          const li = document.createElement("li");
+          li.textContent = detail;
+          detailsList.appendChild(li);
+        });
+
+        document.getElementById("popup").style.display = "flex";
+
+        updateCurrency();
+        updatePrice();
+      }
+
+      function hidePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
+      function updatePrice() {
+        const quantity = document.getElementById("quantity").value;
+        const priceType = document.getElementById("price-type").value;
+        let basePrice =
+          currentCurrency === "USD"
+            ? basePriceUSD[priceType]
+            : basePriceUSD[priceType] * exchangeRate;
+        const newPrice = (basePrice * quantity).toFixed(2);
+        document.getElementById("price").textContent = newPrice;
+        document.getElementById(
+          "total-price"
+        ).textContent = `${currentCurrency} ${newPrice}`;
+      }
+
+      function updateCurrency() {
+        currentCurrency = document.getElementById("currency").value;
+        const priceType = document.getElementById("price-type").value;
+        const priceContainer = document.getElementById("price-container");
+        let price =
+          currentCurrency === "USD"
+            ? basePriceUSD[priceType]
+            : (basePriceUSD[priceType] * exchangeRate).toFixed(2);
+        priceContainer.innerHTML = `${currentCurrency} <span id="price">${price}</span>`;
+        updatePrice();
+      }
+
+      function changeQuantity(change) {
+        const quantityInput = document.getElementById("quantity");
+        let currentQuantity = parseInt(quantityInput.value);
+        currentQuantity += change;
+        if (currentQuantity < 1) currentQuantity = 1;
+        quantityInput.value = currentQuantity;
+        updatePrice();
+      }
+    </script>
+              <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
