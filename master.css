@@ -45,7 +45,7 @@ body {
 
 /* Navigation bar */
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   background: var(--bg-color);
   color: var(--text-color);
