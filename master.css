@@ -45,7 +45,7 @@ body {
 
 /* Navigation bar */
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   background: var(--bg-color);
   color: var(--text-color);
@@ -254,6 +254,9 @@ nav {
 }
 /* Responsive styles */
 @media only screen and (max-width: 902px) {
+  header {
+    top: 0;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -315,11 +318,12 @@ nav {
 }
 @media only screen and (max-width: 460px) {
   header {
+    top: 0;
     width: 100%;
   }
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 45px;
     left: 0;
     width: 100%;
     height: 55%;
@@ -1438,7 +1442,7 @@ nav {
   }
 
   .mesage .msg {
-    width: 90%;
+    width: 120%;
   }
 
   .mesage h2 {
@@ -1450,10 +1454,10 @@ nav {
   }
 
   .mesage .msg p {
-    font-size: 11px;
+    font-size: 10px;
   }
   .mesage .msg .profile .name {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 16px;
   }
 }
@@ -1568,6 +1572,10 @@ nav {
 
   .footer p {
     font-size: 12px;
+  }
+  .help p {
+    font-size: 11px;
+    line-height: 17px;
   }
 }
 
