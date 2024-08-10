@@ -51,6 +51,8 @@ header {
   color: var(--text-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  direction: rtl;
+  text-align: right;
 }
 
 nav {
@@ -904,6 +906,8 @@ nav {
   animation: popup-animation 0.4s ease-out;
   justify-content: center;
   color: var(--text-color);
+  direction: rtl;
+  text-align: right;
 }
 
 @keyframes popup-animation {
@@ -920,7 +924,7 @@ nav {
 .close-btn {
   position: absolute;
   top: 20px;
-  right: 20px;
+  left: 20px;
   font-size: 38px;
   font-weight: 600;
   cursor: pointer;
@@ -933,11 +937,11 @@ nav {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 20em;
   height: 20em;
   background: #f39c12;
-  border-bottom-right-radius: 1000%;
+  border-bottom-left-radius: 1000%;
   border-top-left-radius: 20%;
   filter: blur(1px);
 }
@@ -984,8 +988,8 @@ nav {
 .price-selector label,
 .currency-selector label {
   font-size: 18px;
-  margin-right: 3em;
-  padding-left: 0.1em;
+  margin-left: 3em;
+  padding-right: 0.1em;
 }
 
 .price-selector select,
@@ -1009,8 +1013,8 @@ nav {
 }
 
 .popup-quantity label {
-  margin-right: 2em;
-  padding-left: 0.1em;
+  margin-left: 2em;
+  padding-right: 0.1em;
 }
 
 .quantity-controls {
@@ -1143,8 +1147,8 @@ nav {
     height: 10em;
   }
   .popup-quantity label {
-    margin-right: 0.7em;
-    padding-left: 0.1em;
+    margin-left: 0.7em;
+    padding-right: 0.1em;
   }
   #quantity {
     width: 100px;
@@ -1194,7 +1198,7 @@ nav {
   .price-selector label,
   .currency-selector label {
     font-size: 15px;
-    margin-right: 0.7em;
+    margin-left: 0.7em;
   }
 
   .price-selector select,
@@ -1615,6 +1619,8 @@ nav {
   line-height: 2em;
   color: var(--text-color);
   margin-top: 5em;
+  direction: rtl;
+  text-align: right;
 }
 .help {
   position: relative;
