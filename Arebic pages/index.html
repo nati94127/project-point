@@ -297,7 +297,7 @@
     </div>
     </div>
     <!--product4-->
-    <div class="popup-overlay" id="popup">
+          <div class="popup-overlay" id="popup">
       <div class="popup-content">
         <span class="close-btn" onclick="hidePopup()">&times;</span>
         <div class="popup-left">
@@ -309,29 +309,28 @@
         </div>
         <div class="popup-right">
           <h2 class="popup-product-name">CH07 Shell Chair</h2>
-          <p class="popup-product-category">White</p>
           <div class="popup-rating">
             <span class="stars">★★★★★</span>
           </div>
           <div class="price-selector">
-            <label for="price-type">Price Type:</label>
+            <label for="price-type">:نوع السعر</label>
             <select id="price-type" onchange="updatePrice()">
-              <option value="pack">Price per Pack</option>
-              <option value="carton">Price per Carton</option>
+              <option value="pack">السعر لكل حزمة</option>
+              <option value="carton">السعر لكل كرتونة</option>
             </select>
           </div>
           <p class="popup-product-price" id="price-container">
             $<span id="price">599.00</span>
           </p>
           <div class="currency-selector">
-            <label for="currency">Currency:</label>
+            <label for="currency">:عملة</label>
             <select id="currency" onchange="updateCurrency()">
               <option value="USD">USD</option>
-              <option value="SAR">SAR</option>
+              <option value="SAR">ريال سعودي</option>
             </select>
           </div>
           <div class="popup-quantity">
-            <label for="quantity">Quantity:</label>
+            <label for="quantity">:كمية</label>
             <div class="quantity-controls">
               <button class="quantity-btn" onclick="changeQuantity(-1)">
                 -
@@ -350,25 +349,24 @@
             </div>
           </div>
           <div class="popup-description">
-            <h3>Description</h3>
+            <h3>وصف</h3>
             <p id="popup-description-text">
               This is a detailed description of the product. It includes all the
               important features and benefits.
             </p>
           </div>
           <div class="popup-details">
-            <h3>Details</h3>
+            <h3>تفاصيل</h3>
             <ul id="popup-details-list">
-              <li>Size: 29.5"H x 28.5"W x 28.5"D</li>
               <li>
-                Materials: Plywood, Oak Veneer, Semi-Aniline Italian Leather
+                 Plywood, Oak Veneer, Semi-Aniline Italian Leather:مواد
               </li>
               <li>Color: Cream Leather</li>
-              <li>Weight: 40 lbs</li>
+              <li>وزن:</li>
             </ul>
           </div>
           <div class="popup-total-price">
-            <span>Total Price: <span id="total-price">$599.00</span></span>
+            <span>السعر الإجمالي: <span id="total-price">$599.00</span></span>
           </div>
         </div>
       </div>
