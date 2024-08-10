@@ -1081,7 +1081,7 @@ nav {
   }
 }
 /* Responsive design */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .popup-content {
     flex-direction: column;
     margin: 15em;
@@ -1126,24 +1126,35 @@ nav {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 460px) {
   .popup-content {
     padding: 20px;
     margin: 2em;
   }
 
   .popup-product-image {
-    width: 50%;
-    position: relative;
+    width: 55%;
+    top: 5px;
+    position: absolute;
     margin-bottom: 20px;
   }
-
+  .popup-left::before {
+    width: 10em;
+    height: 10em;
+  }
+  .popup-quantity label {
+    margin-right: 0.7em;
+    padding-left: 0.1em;
+  }
+  #quantity {
+    width: 100px;
+  }
   .popup-product-name {
     font-size: 18px;
   }
 
   .popup-product-price {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 1em;
   }
 
@@ -1162,8 +1173,80 @@ nav {
   }
 
   .popup-total-price {
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .popup-content {
+    padding: 10px;
+    height: 90%;
+  }
+  .popup-product-image {
+    width: 50%;
+    position: absolute;
+    top: 10px;
+  }
+  .popup-left::before {
+    width: 5em;
+    height: 5em;
+  }
+  .price-selector label,
+  .currency-selector label {
+    font-size: 15px;
+    margin-right: 0.7em;
+  }
+
+  .price-selector select,
+  .currency-selector select {
+    font-size: 15px;
+    border-radius: 25px;
+  }
+  .popup-quantity label {
+    margin-right: 0.7em;
+    padding-left: 0.1em;
+    font-size: 15px;
+  }
+  .quantity-btn {
+    padding: 4px 8px;
+  }
+
+  #quantity {
+    width: 70px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 1.2em 5px;
+  }
+  .popup-product-name {
+    font-size: 18px;
+  }
+
+  .popup-product-price {
+    font-size: 18px;
+    margin-top: 1em;
+  }
+  .close-btn {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .stars {
+    font-size: 15px;
+  }
+
+  .popup-description h3,
+  .popup-details h3 {
+    font-size: 16px;
+  }
+
+  .popup-description p,
+  .popup-details ul {
+    font-size: 12px;
+  }
+
+  .popup-total-price {
+    font-size: 18px;
+    padding-bottom: 1em;
   }
 }
 /*team*/
